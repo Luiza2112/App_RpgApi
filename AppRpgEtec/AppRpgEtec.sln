@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+VisualStudioVersion = 17.12.35707.178 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppRpgEtec", "AppRpgEtec.csproj", "{D155CB25-6B31-4D6C-97ED-9B076389FD29}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppRpgEtec", "AppRpgEtec\AppRpgEtec.csproj", "{EB982DC9-31C8-45E4-AA88-E10D0134D5DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D155CB25-6B31-4D6C-97ED-9B076389FD29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D155CB25-6B31-4D6C-97ED-9B076389FD29}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D155CB25-6B31-4D6C-97ED-9B076389FD29}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D155CB25-6B31-4D6C-97ED-9B076389FD29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB982DC9-31C8-45E4-AA88-E10D0134D5DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB982DC9-31C8-45E4-AA88-E10D0134D5DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB982DC9-31C8-45E4-AA88-E10D0134D5DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB982DC9-31C8-45E4-AA88-E10D0134D5DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
