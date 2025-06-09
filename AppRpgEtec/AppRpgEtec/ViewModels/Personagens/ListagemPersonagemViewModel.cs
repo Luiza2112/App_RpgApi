@@ -31,8 +31,9 @@ namespace AppRpgEtec.ViewModels.Personagens
                 Personagens = await pService.GetPersonagensAsync();
                 OnPropertyChanged(nameof(Personagens)); // Informará a View que houve carregamento
             }
-            catch
+            catch (Exception ex) 
             {
+            
                 //Captará o erro para exibir em tela
                 await Application.Current.MainPage
                     .DisplayAlert("Ops", ex.Message + "Detalhes" + ex.InnerException, "OK");
