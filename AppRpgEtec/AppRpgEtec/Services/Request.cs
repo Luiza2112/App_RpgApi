@@ -75,8 +75,21 @@ namespace AppRpgEtec.Services
             string serialized = await response.Content.ReadAsStringAsync();
             if (response.StatusCode != System.Net.HttpStatusCode.OK)
                 throw new Exception(serialized);
-            TResult result = await Task.Run(() => JsonConvert.DeserializeObject<TResult>(serialized));
-            return result;
+                System.Diagnostics.Debug.WriteLine("JSON recebido:");
+                System.Diagnostics.Debug.WriteLine(serialized);
+            try
+            {
+                TResult result = JsonConvert.DeserializeObject<TResult>(serialized);
+                Console.WriteLine($"Quantidade de personagens: {(result as IEnumerable<object>)?.Count() ?? 0}");
+                return result;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Erro na desserialização: {ex.Message}");
+                return default;
+            }
+            //TResult result = await Task.Run(() => JsonConvert.DeserializeObject<TResult>(serialized));
+            //return result;
         }
         public async Task<int> DeleteAsync(string uri, string token)
         {
